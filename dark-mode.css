@@ -1,0 +1,58 @@
+[data-theme="dark"] {
+  background-color: rgb(22, 22, 22) !important;
+  color: rgb(207, 207, 207);
+  transition: background-color 0.25s ease-out,
+              color 0.25s ease-out;
+}
+
+[data-theme="dark"] .bg-light , [data-theme="dark"] .bg-warning {
+  background-color: #333 !important;
+  transition: background-color 0.25s ease-out;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+  transition: background-color 0.25s ease-out;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: rgb(207, 207, 207) !important;
+  transition: background-color 0.25s ease-out;
+}
+
+[data-theme="dark"] .nav_dark {
+  color: #eee !important;
+  transition: color 0.25s ease-out;
+}
+
+[data-theme="dark"] .dsw_card {
+  background-color: rgb(48, 48, 48) !important;
+  transition: background-color 0.25s ease-out;
+}
+
+[data-theme="dark"] .active {
+  background-color: black !important;
+  transition: background-color 0.25s ease-out,
+              color 0.25s ease-out;
+}
+
+[data-theme="dark"] .table {
+  border: solid rgb(43, 43, 43) 1px !important;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.bg-light {
+  transition: background-color 0.25s ease-out;
+}
+
+body , .active {
+  transition: background-color 0.25s ease-out,
+              color 0.25s ease-out;
+}
+
+.dsw , .dsw_card {
+  transition: color 0.25s ease-out
+              background-color 0.25s ease-out;
+}

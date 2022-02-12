@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../dark-mode.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../include/click_to_close.js"></script>
+    <title>HelloTaiwan - 一個Hypixel公會</title>
+  </head>
+  <body>
+    <script src="../include/remove_hash.js"></script>
+
+    <!-- top_button -->
+    <button onclick="topFunction()" id="myBtn">Top</button>
+    <script src="../include/top_button.js"></script>
+
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand nav_dark dsw" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto flex-nowrap">
+            <li class="nav-item">
+              <a class="nav-link nav-top nav_dark" aria-current="page" href="./status.html">公會狀態</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active nav-top nav_dark" href="./about_us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-top nav_dark" href="./join_us.html">Join us</a>
+            </li>
+            <li class="nav-link">
+              <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="darkSwitch" />
+                <label class="custom-control-label nav_dark dsw" for="darkSwitch">Dark Mode</label>
+              </div>
+              <script src="../include/dark-mode-switch.js"></script>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- title -->
+    <div class="p-5 mb-4 bg-light jumbotron jumbotron-fluid">
+        <div class="container-fluid py-5">
+          <br>
+          <h1 class="display-5 fw-bold" style="color: black;">About us</h1>
+          <p class="col-md-8 fs-4" style="color: black;">關於我們</p>
+        </div>
+    </div>
+
+    <!-- 內文 -->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-xl-2" id="nav_bottom">
+            <nav class="nav flex-column text-center">
+              <p id="nav_dark" style="color: rgb(150, 150, 150);">段落導覽列</p>
+              <a class="nav-link nav-section" href="#section1" style="color: rgb(0, 102, 255);">誕生原因</a>
+              <a class="nav-link nav-section" href="#section2" style="color: rgb(0, 102, 255);">名稱由來</a>
+              <a class="nav-link nav-section" href="#section3" style="color: rgb(0, 102, 255);">創辦人</a>
+              <a class="nav-link nav-section" href="#section4" style="color: rgb(0, 102, 255);">想對大家說的話</a>
+            </nav>
+          </div>
+          <div class="col-12 col-xl-10">
+            <section id="section1"></section>
+            <h2>誕生原因</h2>
+            <p>因為會長買了MVP+，發現可以創公會，當初也只是想把幾個好捧由拉進來玩，</p>
+            <p>我們的副會也開始找了人進來，接著就越來越多了(?</p>
+            <p>包欠，就只有這個樣子(o´・ω・`)σ)Д`)</p>
+            <p id="dateHasCreated"></p>
+            <img src="../pic/createTime.PNG">
+            <p id="birthday"></p>
+            <img src="../pic/happyBirthday.jpg" id="birthdayImg">
+            <script src="../include/created_time.js"></script>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <section id="section2"></section>
+            <h2>名稱由來</h2>
+            <p>名為<strong>HelloTaiwan</strong>是因為我們是來自台灣的公會，會長想要讓大家一眼就知道我們來自哪</p>
+            <p>讓更多人認識台灣這個地方ヽ(●´∀`●)ﾉ</p>
+            <p>下次看到台灣人，絕對會豎起他們的大拇指的啦</p>
+            <img src="../pic/nicefinger.png" style="max-width: 30%; max-height: 30%; padding-bottom: 10px;">
+            <p>絕對不是想不到名子才隨便想的啦(／‵Д′)／~ ╧╧</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <section id="section3"></section>
+            <h2>創辦人</h2>
+            <p>由<strong>黑皮HT_HappTW</strong>創辦以及和<strong>餅乾HT_sugarcookieTW</strong>兩人一起經營</p>
+            <p>接著就開了DC群，人也慢慢的變多了呢ヽ(✿ﾟ▽ﾟ)ノ</p>
+            <div class="row">
+              <div class="col-xl-3 col-12" style="padding-bottom: 20px;">
+                <div class="card bg-light" style="width: 18rem; border-radius: 5%;">
+                  <img class="card-img-top" src="https://crafatar.com/renders/body/85913c9548b74c00b8c57b954471460f" alt="挖喜黑皮" style="max-width: 30%; max-height: 30%;">
+                  <div class="card-body">
+                    <p class="card-text"> 🔼這隻是黑皮，這傢伙就是會長，但是他絕對不是妹子</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-12">
+                <div class="card bg-light" style="width: 18rem; border-radius: 5%">
+                  <img class="card-img-top" src="https://crafatar.com/renders/body/d8901d5de773488993dc4eef90620ab1" alt="挖喜餅乾" style="max-width: 30%; max-height: 30%;">
+                  <div class="card-body">
+                    <p class="card-text"> 🔼這隻是餅乾，他是副會長，一樣也不是妹子，目前消失中</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <section id="section4"></section>
+            <h2>想對大家說的話</h2>
+            <p>不知不覺公會也成長到現在這個樣子，會長我真的從沒想過會變這個規模(*´▽`*)</p>
+            <p>雖然會長我不常上線(抱歉啦各位(›´ω`‹ )</p>
+            <p>但是今天、明天，還有很久很久以後的未來也請繼續支持我們喔(*´∀`)~♥</p>
+            <p>打到都快哭了呢(沒有，並沒有，不要瞎掰好嗎)(,,・ω・,,)</p>
+            <img src="../pic/noOK.jpg" style="max-width: 100%; max-height: 100%; padding-bottom: 20px;">
+            <p class="content_bottom">好啦，真的很感謝各位，還有曾經跟會長我一起打拼的各位捧油，謝謝大家✧*｡٩(ˊᗜˋ*)و✧*｡</p>
+          </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-light text-center text-lg-start footer" style="color: black;">
+      <!-- Copyright -->
+      <div class="text-center p-3">
+        © Copyright ✿Happy黑皮✿#2176
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- ----------------------------------------------------------------- -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
